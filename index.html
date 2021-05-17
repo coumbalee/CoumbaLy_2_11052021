@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class='Container'>
+    <div class='container'>
         <header>
             <!--Barre de navigation-->
             <nav>
@@ -26,19 +26,22 @@
         </header>
         <main>
             <!--Section de recherche-->
-            <section class='Search'>
+            <section class='search'>
                 <div>
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                <!--Bouton de recherche-->
-                <div class='SearchButton'>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" placeholder="Marseille, France">
-                    <button>Rechercher</button>
-                </div>
+                <!--Formulaire de recherche-->
+                <form>
+                    <div class="input-container">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input class="input-field" type="text" placeholder="Marseille, France" name="ville">
+                        <i class="fa fa-envelope icon"></i>
+                    </div>
+                </form>
+
                 <!--Filtres de recherche-->
-                <div class='SearchFilters'>
+                <div class='filters-container'>
                     <p>Filtres</p>
                     <ul class="fa-ul">
                         <li><span class="fa-li"><i class="fas fa-paw"></i></span>Économique</li>
@@ -47,12 +50,16 @@
                         <li><span class="fa-li"><i class="fas fa-paw"></i></span>Animaux acceptés</li>
                     </ul>
                 </div>
-                <div class='SearchResults'>
-                    <i class="fas fa-info"></i>
+                <div class='results-container'>
+                    <!--<div class='results'>-->
+                        <i class="fas fa-info"></i>
+                    <!--</div>
+                    <div class='results'>-->
                     <p>Plus de 500 logements sont disponibles pour cette ville</p>
                 </div>
-            </section>
-        </main>
+    </div>
+    </section>
+    </main>
     </div>
 </body>
 
