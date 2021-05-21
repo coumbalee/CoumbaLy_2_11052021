@@ -4,8 +4,12 @@ body {
     display: flex;
     justify-content: flex-start;
     }
+    li{
+        list-style-type: none;
+    }
   .bold{
       font-weight: bold;
+    
   }
 
                         /*STYLES POUR ÉCRANS MOBILES*/
@@ -19,7 +23,7 @@ body {
     /*Style du menu de navigation*/
     nav ul{
         display : flex;
-        list-style-type: none;
+        /*list-style-type: none;*/
         justify-content: flex-start;
     }
     nav ul :nth-last-child(1){
@@ -50,17 +54,29 @@ body {
         font-size: 20px;
     }
     h3{
-        font-size: 18px;
+        font-size: 20px;
     }
     }
-
-
      .buttons :{
-         display:flex;
-         
+         display:flex;   
      }
+    /*Style du footer*/
+     footer{
+         width:100%;
+         margin-top:20px;
+        background-color:#f2f2f2;
+        display:flex;
+        justify-content: center;
+        
+    }
+
+
+
                        /*STYLE POUR LES TABLETTES */
 @media screen and (min-width :768px ){
+    .container{
+        width:100%;
+    }
 
     nav img {
     height :40px;
@@ -76,8 +92,17 @@ body {
     h2 {
     font-weight : ;
     }
+
+    footer{
+        margin-top: 20px;
+        background-color:#f2f2f2;
+        display:flex;
+        justify-content:flex-start ;
+        flex-direction:row;
+        
+    }
 }
-/*STYLES COMMUNS À  TOUS LES ÉCRANS*/
+               /*STYLES COMMUNS À  TOUS LES ÉCRANS*/
 
 /* Style du champs de recherche */
 .input-container {
@@ -144,42 +169,49 @@ body {
 }
 .filters-buttons{
     background-color: rgb(255, 255, 255);
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 20px 20px 20px 20px;
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
     border: 1px solid#f2f2f2;
     display:flex;
     align-items: center;
+    margin: 5px;
 }
 /* Style des icones de filters-container*/
 
 .fa-circle{
-    margin-left: -25PX;
-    font-size :45px;
+    margin-left: -20PX;
+    
+    font-size :40px;
     color : #DEEBFF;
 }
 .fa-euro-sign{
     color:#0065FC;
-    font-size :20px;
-    margin-left: -30PX;
+    font-size :18px;
+    margin-left: -28PX;
     margin-right: 15px;
 }
 .fa-child{
     COLOR :#0065FC;
-    font-size :20px;
-    margin-left: -30PX;
+    font-size :18px;
+    margin-left: -28PX;
     margin-right: 15px;
 }
 .fa-heart{
     color:#0065FC;
-    font-size :18px;
-    margin-left: -32PX;
+    font-size :16px;
+    margin-left: -30PX;
     margin-right: 15px;
 }
 .fa-paw{
     color:#0065FC;
-    font-size :18px;
-    margin-left: -32PX;
+    font-size :16px;
+    margin-left: -29PX;
     margin-right: 15px;
 }
 
+ button span{
+    margin-left:15px;
+}
+
+                     /* STYLE DU FOOTER*/
