@@ -27,7 +27,7 @@ nav ul {
 nav ul :nth-last-child(1) {
   position: absolute;
   top: 15px;
-  right: 50px;
+  right: 30px;
   color: #0065fc;
   font-weight: bolder;
 }
@@ -225,20 +225,20 @@ flex-wrap: wrap;
 }
 .popular-text{
   padding-bottom: 30px;
-  height: 0px;
+  height: 0;
 
 }
 .fa-star{
   color:#0065fc;
 }
 
-.popular-icones {
+/*.popular-icones {
   display:flex;
   justify-content: flex-start;
   text-align: left;
-/*margin-inline-start: -35px;*/
+/*margin-inline-start: -35px;
   flex-direction: row;
-}
+}*/
 /*.fa-star:nth-last-child(1){
 color:grey;
 }*/
