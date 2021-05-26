@@ -170,30 +170,33 @@ justify-content: space-evenly;
   align-items: center;
   justify-content: space-between;
 }
-
+/* Style de la section popular-accomodations*/
 .popular-accomodations{
   margin-top:10px;
   margin-bottom:20px;
   padding:5px;
   background-color:#f2f2f2;
-  /*align-content: ;*/
 }
+/* Style des images des cards*/
 .popular-image{
   object-fit: cover;
   width:40%;
-  padding:5px 0 5px 5px;
-
+  height:150px;
+  padding-left :5px;
   border-radius: 15px 0px 0px 15px;
 }
+/* Style de la liste de cards (ul)*/
 .popular-cards{
   display:flex;
   flex-direction: column;
   align-content: center;
+
+
 }
+/* Style des cards*/
 .popular-list-cards{
   display:flex;
-  justify-content: space-between;
-  /*align-items:;*/
+  align-items: center;
   background-color: white;
   height:160px;
   width:100%;
@@ -201,30 +204,36 @@ justify-content: space-evenly;
   margin-inline-start:-30px;
   margin-top:10px;
 }
-.popular-cards a{
 
-  position:relative;
+/* Style des liens de cards*/
+.popular-list-cards a{
+  display:flex;
   color:black;
   text-decoration: none;
+  justify-content:space-between;
+  align-items:center;
 }
+/* Style du contenu des cards*/
 .popular-content {
 width: 50%;
+}
 
-}
+/* Style du paragraphe des cards*/
 .popular-text{
-  padding-bottom: 30px;
-  height: 0;
+  padding-bottom: 15px;
+  
 }
-.popular-list-cards h3{
+/* Style du titre des cards*/
+
+.popular-content h3{
   font-size: 18px;
   padding-bottom: 0;
 }
+/* Style des icones de cards*/
+
 .fa-star{
-  
   color:#0065fc;
 }
-
-
 
  /*SECTION HÉBERGEMENTS */
  .accomodations{
@@ -244,7 +253,6 @@ width: 50%;
 .accomodations-cards{
   display:flex;
   flex-direction: column;
-  
 
 }
 .accomodations-list-cards{
@@ -257,7 +265,6 @@ width: 50%;
 }
 .accomodations-cards a{
 
-  position:;
   color:black;
   text-decoration: none;
 }
@@ -275,8 +282,6 @@ font-size: 18px;
   margin-top:-15px;
   margin-bottom:10px;
 }
-
-
 
   /*SECTION ACTIVITÉS*/
   .activities{
