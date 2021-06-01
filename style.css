@@ -17,6 +17,7 @@ li {
 }
 a{
   text-decoration:none;
+  color:black;
 }
 /*Taille des fonts*/
 h1 {
@@ -24,6 +25,13 @@ h1 {
 }
 h2 {
   font-size: 20px;
+}
+h3{
+  font-size: 17px;
+}
+p{
+  font-size: 16px;
+
 }
 /*Style de la classe bold*/
 .bold {
@@ -35,36 +43,46 @@ nav ul {
   padding: 0;
   margin: 0;
 }
-nav ul a  {
-  text-decoration:none;
-  /*color: #0065fc;*/
+#inscription{
   color:#0065fc;
-}
-nav ul :nth-last-child(1) {
-  position: absolute;
+  font-weight: bold;
+  position:absolute;
   top: 5px;
   right: 10px;
   font-weight: bolder;
 }
+nav ul a  {
+text-decoration:none;
+}
+
+/*nav ul :nth-last-child(1) {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-weight: bolder;
+}*/
 
 nav ul :nth-last-child(2),
 nav ul :nth-last-child(3) {
   flex: 1;
   padding-bottom: 40px;
-  text-align: center;
   position: relative;
   right:40px;
   border-bottom: 2px solid #f2f2f2;
+  text-align: center;
+  
 }
 nav ul  :nth-last-child(2):active,
 nav ul :nth-last-child(3):active {
 border-bottom: 2px solid #0065fc;
 }
 
-nav ul :nth-last-child(2):hover,
+/*nav ul :nth-last-child(2):hover,
 nav ul :nth-last-child(3):hover {
+
 border-bottom: 2px solid #0065fc;
-}
+}*/
+
 /*Taille du logo*/
 nav img {
   height: 35px;
@@ -231,25 +249,28 @@ nav img {
 }
 /* Style du titre des cards*/
 .popular-content h3 {
-  font-size: 18px;
+  /*font-size: 18px;*/
   padding-bottom: 0;
 }
 /* Style des icones de cards*/
 .fa-star.full{
   color: #0065fc;
+  font-size: 15px;
 }
 .fa-star{
   color:#bcbec1;
+  font-size: 15px;
+
 }
 /*SECTION HÉBERGEMENTS */
 .accomodations {
-  padding: 10px;
+  padding: 10px 20px 10px 10px;
   background-color: rgb(242, 242, 242, 0.4);
 }
 /* Style des images des cards*/
 .accomodation-image {
   object-fit: cover;
-  width: 97%;
+  width: 95%;
   height: 60%;
   padding: 5px 5px 0 5px;
   border-radius: 15px 15px 0px 0px;
@@ -274,13 +295,17 @@ nav img {
 }
 /* Style  du titre des cards*/
 .accomodations-cards h3 {
-  font-size: 18px;
+  margin-top: 0;
+}
+.all-accomodations h2 {
+  margin-left:15px;
 }
 .accomodation-content {
   justify-content: flex-start;
   width: 100%;
-  padding: 0 0 5px 20px;
-  margin-top: -15px;
+  height:40px;
+  padding: 0 0 5px 5px;
+
 }
 /* Style du paragraphe des cards*/
 
@@ -434,6 +459,60 @@ font-size:20px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.all-accomodations{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  height: 600px;
+}
+
+.popular-accomodations{
+ 
+flex:1;
+/*position:relative;
+left:950px;*/
+margin-top:0;
+margin-left:10px;
+margin-right: 10px;
+border-radius: 20px;
+width: 30%;
+}
+
+.popular-cards{
+  margin-top:0;
+}
+.accomodations{
+  justify-content: ;
+  /*position:relative;
+  right:450px;*/
+flex:2;
+background-color: rgb(242, 242, 242);
+border-radius: 40px;
+margin-right:px;
+}
+
+.accomodations span{
+  padding-bottom:20px;
+  margin-left: 15px;
+}
+.accomodations-list-cards {
+  background-color: rgb(255, 255, 255);
+  height: 220px;
+  width: 33%;
+  border-radius: 15px 15px 15px 15px;
+  margin-top: 0px;
+  margin-bottom:20px;
+
+}
+.accomodations-cards{
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+margin-bottom: 0;
+  
+
 }
 
 }
