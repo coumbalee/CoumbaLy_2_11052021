@@ -375,7 +375,7 @@ footer {
     margin-bottom:30px;
   }
 nav ul {
-  padding: top 10px;
+  padding-top: 10px;
 }
 
 nav ul :nth-last-child(2),
