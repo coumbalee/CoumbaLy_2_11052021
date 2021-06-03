@@ -1,13 +1,11 @@
 /*Styles du body */
-
 body {
   font-family: "Raleway", sans-serif;
   display: flex;
   justify-content: center;
   padding: 0;
-
   margin-left: 10px;
-  font-size: 16px;
+  
 }
 .container {
   width: 100%;
@@ -37,6 +35,8 @@ p {
 .bold {
   font-weight: bold;
 }
+                  /*SECTION DU HEADER*/
+
 /*Style du menu de navigation*/
 nav ul {
   display: flex;
@@ -55,7 +55,6 @@ nav  a {
   text-decoration: none;
   margin-left: 60px;
 }
-
 nav ul :nth-last-child(2),
 nav ul :nth-last-child(3) {
   flex: 1;
@@ -69,13 +68,10 @@ nav ul :nth-last-child(2):active,
 nav ul :nth-last-child(3):active {
   border-bottom: 2px solid #0065fc;
 }
-
-/*nav ul :nth-last-child(2):hover,
+nav ul :nth-last-child(2):hover,
 nav ul :nth-last-child(3):hover {
-
 border-bottom: 2px solid #0065fc;
-}*/
-
+}
 /*Taille du logo*/
 nav img {
   height: 35px;
@@ -88,7 +84,6 @@ nav img {
   height: 40px;
   font-size: 15px;
 }
-
 /* Style de l'icone map du champs de recherche */
 .fa-map-marker-alt {
   padding: 10px;
@@ -107,15 +102,14 @@ nav img {
   background: #0065fc;
   color: #f2f2f2;
   width: 20px;
-
   position: absolute;
-  left: 280px;
+  left: 250px;
   border-radius: 10px;
 }
 /*Style du placeholder dans le champs de recherche*/
 .input-field {
   height: 30px;
-  width: 300px;
+  width: 270px;
   border-style: none;
   border: solid 1px #f2f2f2;
   border-radius: 10px;
@@ -131,7 +125,7 @@ nav img {
   justify-content: flex-start;
   align-items: center;
 }
-.rechercher {
+.button{
   visibility: hidden;
 }
 /* Style de l'icone info du paragraphe de résultats */
@@ -141,9 +135,7 @@ nav img {
   border-radius: 10px 10px 10px 10px;
   margin-right: 10px;
 }
-
 /* Style de la div filters-container*/
-
 .buttons {
   margin-left: 10px;
   display: flex;
@@ -212,7 +204,6 @@ nav img {
 .popular-cards {
   display: flex;
   flex-direction: column;
-
   padding: 0;
 }
 /* Style des cards*/
@@ -267,6 +258,12 @@ nav img {
 .accomodations {
   padding: 10px;
 }
+/* Style  du titre de la section*/
+
+.all-accomodations h2 {
+  margin-left: 15px;
+}
+
 /* Style des images des cards*/
 .accomodation-image {
   object-fit: cover;
@@ -289,7 +286,6 @@ nav img {
   box-shadow: 2px 2px 7px rgb(128 128 128 / 16%);
   margin-top: 10px;
 }
-
 /* Style des liens de cards*/
 .accomodations-cards a {
   color: black;
@@ -300,9 +296,7 @@ nav img {
   margin-top: 0;
   margin-bottom: 0;
 }
-.all-accomodations h2 {
-  margin-left: 15px;
-}
+/* Style du contenu des cards*/
 .accomodation-content {
   justify-content: flex-start;
   width: 100%;
@@ -310,14 +304,13 @@ nav img {
   padding: 0 0 5px 5px;
 }
 /* Style du paragraphe des cards*/
-
 .accomodation-text {
   /*margin-top: -15px;*/
   margin-bottom: 10px;
   margin-top:0;
 }
 
-/*SECTION ACTIVITÉS*/
+                           /*SECTION ACTIVITÉS*/
 
 .activities {
   padding: 10px;
@@ -330,10 +323,11 @@ nav img {
   padding: 5px 5px 0 5px;
   border-radius: 15px 15px 0px 0px;
 }
-/* Style des liens de cards*/
+
 .activities-cards{
   padding:0;
 }
+/* Style des liens de cards*/
 .activities-cards a {
   color: black;
   text-decoration: none;
@@ -341,7 +335,6 @@ nav img {
 /* Style des cards*/
 .activities-list-cards {
   box-shadow: 2px 2px 7px rgb(128 128 128 / 16%);
-
   height: 200px;
   width: 100%;
   border-radius: 15px 15px 15px 15px;
@@ -351,7 +344,7 @@ nav img {
 .activities-list-cards h3 {
   padding-left: 20px;
 }
-/*STYLE DU FOOTER*/
+                          /*STYLE DU FOOTER*/
 footer {
   margin-top: 0px;
   padding: 30px;
@@ -375,14 +368,31 @@ footer {
     margin-bottom:30px;
   }
 nav ul {
-  padding-top: 10px;
+  padding: top 10px;
 }
-
 nav ul :nth-last-child(2),
   nav ul :nth-last-child(3) {
     position:static;
     padding-bottom: 20px;
-    
+  }
+  .fa-search {
+    visibility:hidden;
+  }
+  .button {
+    visibility: visible;
+    border-style:none;
+    padding: 9px;
+    background: #0065fc;
+    color: #f2f2f2;
+    position: absolute;
+    left:230px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .button:hover{
+    background-color: #f2f2f2;
+    color:#000000;
   }
 .popular-cards{
   justify-content: flex-start;
@@ -390,16 +400,11 @@ nav ul :nth-last-child(2),
 }
   .popular-list-cards{
     width:50%;
-    /*margin: 10px 40px 10px 100px;*/
   }
-
-
-
 .accomodations-cards{
   flex-direction: row;
   flex-wrap:wrap; 
   justify-content: space-around;
-  
 }
 .accomodations-list-cards{
   width:40%;
@@ -409,7 +414,6 @@ nav ul :nth-last-child(2),
   flex-direction: row;
   flex-wrap:wrap; 
   justify-content: space-around;
-
 }
 .activities-list-cards{
   width:40%;
@@ -418,30 +422,25 @@ nav ul :nth-last-child(2),
   padding-left:10px;
 }
 .footer-container{
-  
   flex-direction:row;
 }
 }
-
 
 
                                /*FORMAT DESKTOP*/
 
 @media only screen and (min-width: 992px) {
   /* Style du header*/
-
   header {
     margin-top: 0px;
     margin-bottom: 20px;
     /*box-sizing: border-box;*/
   }
-
   body {
-    font-size: 18px;
+    /*font-size: 18px;*/
     margin: 0 20px 20px 20px;
   }
   /* Style de la barre de navigation*/
-
   nav {
     display: flex;
     justify-content: space-between;
@@ -458,7 +457,6 @@ nav ul :nth-last-child(2),
     padding-top: 20px;
     box-sizing: border-box;
   }
-
   nav ul :nth-last-child(1) {
     font-weight: bolder;
   }
@@ -468,10 +466,13 @@ nav ul :nth-last-child(2),
     padding-bottom: 0px;
     border-bottom: none;
   }
-
   nav ul :nth-last-child(2):active,
   nav ul :nth-last-child(3):active {
     border-top: 2px solid #0065fc;
+    border-bottom: none;
+  }
+  nav ul :nth-last-child(2):hover,
+  nav ul :nth-last-child(3):hover {
     border-bottom: none;
   }
   nav li a {
@@ -497,17 +498,22 @@ nav ul :nth-last-child(2),
   .fa-search {
     visibility: hidden;
   }
-  .rechercher {
+  .button {
     visibility: visible;
-    padding: 10px;
+    border-style:none;
+    padding: 12px;
     background: #0065fc;
     color: #f2f2f2;
     position: absolute;
+    left:340px;
     text-align: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-
-    display: initial;
+    /*display: initial;*/
+  }
+  .button:hover{
+    background-color: #f2f2f2;
+    color:#000000;
   }
   .input-container {
     display: flex;
@@ -529,8 +535,6 @@ nav ul :nth-last-child(2),
   .filters-buttons {
     font-size: 15px;
   }
-  
-
   .all-accomodations {
     display: flex;
     justify-content: space-between;
@@ -541,7 +545,6 @@ nav ul :nth-last-child(2),
   .all-accomodations p {
     font-size: 13px;
   }
-
   .popular-accomodations {
     flex: 1;
     margin-top: 0;
@@ -549,7 +552,6 @@ nav ul :nth-last-child(2),
     border-radius: 20px;
     width: 30%;
   }
-
   .popular-cards {
     margin-top: 0;
   }
@@ -563,10 +565,6 @@ nav ul :nth-last-child(2),
     padding-left: 5px;
     border-radius: 15px 0px 0px 15px;
   }
-
-  /*.popular-text{
-  margin-top: 0px;
-}*/
   .accomodations {
     flex: 2;
     background-color: #f2f2f2;
@@ -610,12 +608,6 @@ nav ul :nth-last-child(2),
     justify-content: space-between;
     margin-bottom: 0;
   }
-  /* Style des icones de cards*/
-  /*.accomodations-list-cards i{
-  
-  font-size: 10px;
-  margin-top: 0;
-}*/
   .fa-star {
     font-size: 11px;
     margin-top: 0px;
@@ -687,7 +679,6 @@ nav ul :nth-last-child(2),
   #img-6 img {
     height: 78%;
   }
-  
   /*STYLE DU FOOTER*/
   .footer-container {
     display: flex;
@@ -696,62 +687,4 @@ nav ul :nth-last-child(2),
   }
 }
 
-                           /* FORMAT TABLET*/
-                           
-/*@media only screen and (min-width: 760px){
-
-  #inscription{
-    position:static;
-    margin-right:30px;
-  }
-  header{
-    margin-bottom:30px;
-  }
-nav ul {
-  padding: top 10px;
-}
-
-nav ul :nth-last-child(2),
-  nav ul :nth-last-child(3) {
-    position:static;
-    padding-bottom: 20px;
-    
-  }
-.popular-cards{
-  justify-content: flex-start;
-  align-items: center;
-}
-  .popular-list-cards{
-    width:50%;
-    /*margin: 10px 40px 10px 100px;
-  }
-
-
-
-.accomodations-cards{
-  flex-direction: row;
-  flex-wrap:wrap; 
-  justify-content: space-around;
-  
-}
-.accomodations-list-cards{
-  width:40%;
-}
-.activities-cards{
-  display:flex;
-  flex-direction: row;
-  flex-wrap:wrap; 
-  justify-content: space-around;
-
-}
-.activities-list-cards{
-  width:40%;
-}
-.activities-list-cards h3{
-  padding-left:10px;
-}
-.footer-container{
-  
-  flex-direction:row;
-}
-}*/
+ 
