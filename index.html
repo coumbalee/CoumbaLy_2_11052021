@@ -6,7 +6,7 @@
     <title>Reservia</title>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -23,14 +23,13 @@
         <ul>
           <li><a href="#my-accomodation">Hébergements</a></li>
           <li><a href="#my-activities">Activités</a></li>
-          <!--<li>Activités</li>-->
-          <li><a href="#" id="inscription">S'inscrire</a></li>
+          <li><a href="#">S'inscrire</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <!--Section de recherche-->
-      <section class="search container">
+      <section class="search">
         <div>
           <h1 class="bold">
             Trouvez votre hébergement pour des vacances de rêve
@@ -50,10 +49,7 @@
             <!--</div>
               <div>-->
             <a href="#"><i class="fas fa-search"></i></a>
-            <!--<a href="#" class="rechercher">Rechercher</a>-->
-            <a href="#"
-              ><input class="button" type="submit" value="Rechercher"
-            /></a>
+            <input class="button" type="submit" value="Rechercher" />
           </div>
         </form>
         <!--Filtres de recherche-->
@@ -61,7 +57,7 @@
           <h2>Filtres</h2>
           <div class="buttons">
             <button class="filters-buttons" type="button">
-              <i class="fas fa-euro-sign"></i>
+              <i class="fas fa-money-bill-wave euro"></i>
               <span class="bold">Économique </span>
             </button>
             <button class="filters-buttons" type="button">
@@ -73,7 +69,7 @@
               <span class="bold">Romantique</span>
             </button>
             <button class="filters-buttons" type="button">
-              <i class="fas fa-paw"></i>
+              <i class="fas fa-dog"></i>
               <span class="bold">Animaux acceptés</span>
             </button>
           </div>
@@ -84,75 +80,75 @@
           <p>Plus de 500 logements sont disponibles pour cette ville</p>
         </div>
       </section>
-      <div class="all-accomodations container">
+      <div class="all-accomodations">
         <!--Section les plus populaires-->
         <section class="popular-accomodations">
-          <div class="container">
-            <div class="popular-title">
-              <h2 class="bold">Les plus populaires</h2>
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <!--Liste de cards les plus populaires-->
-            <ul class="popular-cards">
-              <li class="popular-list-cards">
-                <a href="#">
-                  <img
-                    class="popular-image"
-                    src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                    alt=" image hôtel le Soleil du matin"
-                  />
-                  <div class="popular-content">
-                    <h3 class="bold">Hôtel Le soleil du matin</h3>
-                    <p class="popular-text">Nuit à partir de 128€</p>
-                    <i class="fas fa-star full"></i>
-                    <i class="fas fa-star full"></i>
-                    <i class="fas fa-star full"></i>
-                    <i class="fas fa-star full"></i>
-                    <i class="fas fa-star full"></i>
-                  </div>
-                </a>
-              </li>
-              <li class="popular-list-cards">
-                <a href="#">
-                  <img
-                    class="popular-image"
-                    src="images/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                    alt="image hôtel Au coeur de l'eau"
-                  />
-                  <div class="popular-content">
-                    <h3 class="bold">Au coeur de l' eau chambres d' hôtes</h3>
-                    <p class="popular-text">Nuit à partir de 71€</p>
-                    <i class="fas fa-star full"></i>
-                    <i class="fas fa-star full"></i>
-                    <i class="fas fa-star full"></i>
-                    <i class="fas fa-star full"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </a>
-              </li>
-              <li class="popular-list-cards">
-                <a href="#">
-                  <img
-                    class="popular-image"
-                    src="images/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                    alt="image hôtel Au coeur de l'eau"
-                  />
-                  <div class="popular-content">
-                    <h3 class="bold">Hôtel tout bleu et blanc</h3>
-                    <p class="popular-text">Nuit à partir de 71€</p>
-                    <i class="fas fa-star full"></i>
-                    <i class="fas fa-star full"></i>
-                    <i class="fas fa-star full"></i>
-                    <i class="fas fa-star full"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </a>
-              </li>
-            </ul>
+          <!--<div class="container">-->
+          <div class="popular-title">
+            <h2 class="bold">Les plus populaires</h2>
+            <i class="fas fa-chart-line"></i>
           </div>
+          <!--Liste de cards les plus populaires-->
+          <ul class="popular-cards">
+            <li class="popular-list-cards">
+              <a href="#">
+                <img
+                  class="popular-image"
+                  src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                  alt=" image hôtel le Soleil du matin"
+                />
+                <div class="popular-content">
+                  <h3 class="bold">Hôtel Le soleil du matin</h3>
+                  <p class="popular-text">Nuit à partir de 128€</p>
+                  <i class="fas fa-star full"></i>
+                  <i class="fas fa-star full"></i>
+                  <i class="fas fa-star full"></i>
+                  <i class="fas fa-star full"></i>
+                  <i class="fas fa-star full"></i>
+                </div>
+              </a>
+            </li>
+            <li class="popular-list-cards">
+              <a href="#">
+                <img
+                  class="popular-image"
+                  src="images/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                  alt="image hôtel Au coeur de l'eau"
+                />
+                <div class="popular-content">
+                  <h3 class="bold">Au coeur de l' eau chambres d' hôtes</h3>
+                  <p class="popular-text">Nuit à partir de 71€</p>
+                  <i class="fas fa-star full"></i>
+                  <i class="fas fa-star full"></i>
+                  <i class="fas fa-star full"></i>
+                  <i class="fas fa-star full"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
+            </li>
+            <li class="popular-list-cards">
+              <a href="#">
+                <img
+                  class="popular-image"
+                  src="images/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                  alt="image hôtel Au coeur de l'eau"
+                />
+                <div class="popular-content">
+                  <h3 class="bold">Hôtel tout bleu et blanc</h3>
+                  <p class="popular-text">Nuit à partir de 71€</p>
+                  <i class="fas fa-star full"></i>
+                  <i class="fas fa-star full"></i>
+                  <i class="fas fa-star full"></i>
+                  <i class="fas fa-star full"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!--</div>-->
         </section>
         <!--Section hébergements-->
-        <section class="accomodations ">
+        <section class="accomodations">
           <h2 class="bold" id="my-accomodation">Hébergements à Marseille</h2>
           <!--Liste de cards hébergements-->
           <ul class="accomodations-cards">
@@ -269,11 +265,11 @@
         </section>
       </div>
       <!--Section activités-->
-      <section class="activities container">
+      <section class="activities">
         <h2 class="bold" id="my-activities">Activités à Marseille</h2>
         <!--Liste de cards des activités-->
         <ul class="activities-cards">
-          <li id="img-1" class="activities-list-cards">
+          <li class="activities-list-cards img1">
             <a href="#">
               <img
                 class="activity-image"
@@ -283,7 +279,7 @@
               <h3 class="bold">Vieux port</h3>
             </a>
           </li>
-          <li id="img-2" class="activities-list-cards">
+          <li class="activities-list-cards img2">
             <a href="#">
               <img
                 class="activity-image"
@@ -293,7 +289,7 @@
               <h3 class="bold">Fort de Promègues</h3>
             </a>
           </li>
-          <li id="img-3" class="activities-list-cards">
+          <li class="activities-list-cards img3">
             <a href="#">
               <img
                 class="activity-image"
@@ -303,7 +299,7 @@
               <h3 class="bold">Îles du Frioul</h3>
             </a>
           </li>
-          <li id="img-4" class="activities-list-cards">
+          <li class="activities-list-cards img4">
             <a href="#">
               <img
                 class="activity-image"
@@ -313,7 +309,7 @@
               <h3 class="bold">Parc National des calanques</h3>
             </a>
           </li>
-          <li id="img-5" class="activities-list-cards">
+          <li class="activities-list-cards img5">
             <a href="#">
               <img
                 class="activity-image"
@@ -323,7 +319,7 @@
               <h3 class="bold">Notre Dame de la Garde</h3>
             </a>
           </li>
-          <li id="img-6" class="activities-list-cards">
+          <li class="activities-list-cards img6">
             <a href="#">
               <img
                 class="activity-image"
@@ -339,7 +335,7 @@
     <!--Footer-->
     <footer>
       <div class="footer-container">
-        <div class="About">
+        <div class="about">
           <h3 class="bold">À propos</h3>
           <div>
             <p>Fonctionnement du site</p>
@@ -354,7 +350,7 @@
             <p>Soumettre votre hôtel</p>
           </div>
         </div>
-        <div class="Help">
+        <div class="help">
           <h3 class="bold">Assistance</h3>
           <div>
             <p>Centre d' aide</p>
