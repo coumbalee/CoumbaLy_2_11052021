@@ -112,7 +112,7 @@ nav img {
 /*Style du placeholder dans le champs de recherche*/
 .input-field {
   height: 30px;
-  width: 270px;
+  width: 240px;
   border-style: none;
   border: solid 1px #f2f2f2;
 
@@ -385,6 +385,9 @@ footer {
     background-color: #f2f2f2;
     color: #000000;
   }
+  .input-container{
+    display:block;
+  }
         /*SECTION HEBERGEMENTS POPULAIRES*/
   .popular-accomodations {
     border-radius: 20px;
@@ -509,6 +512,7 @@ footer {
     height: 36px;
     width: 400px;
   }
+  
      /* SECTION FILTRES*/
 
   .filters-container {
